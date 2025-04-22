@@ -1,0 +1,9 @@
+event-driven-task-tracker/
+│
+├── main.go
+├── static/
+│   └── w3.css
+├── templates/
+│   └── index.html
+│   └── task.html
+├── .env
