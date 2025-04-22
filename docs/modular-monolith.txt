@@ -1,0 +1,12 @@
+monular-monilith-biomassx/
+├── cmd/
+│   └── server/          → entry point
+├── internal/
+│   ├── user/            → user module (model, handler, service, repo)
+│   └── db/              → DB connection
+├── web/
+│   ├── static/          → CSS, JS
+│   └── templates/       → HTML pages
+├── .env
+├── go.mod
+└── README.md
