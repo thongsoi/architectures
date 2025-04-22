@@ -1,0 +1,18 @@
+Onion-architecture-app/
+├── main.go
+├── handler/
+│   └── user_handler.go
+├── service/
+│   └── user_service.go
+├── repository/
+│   └── user_repository.go
+├── model/
+│   └── user.go
+├── web/
+│   ├── static/
+│   │   └── style.css
+│   └── templates/
+│       ├── index.html
+│       └── user_list.html
+├── .env
+└── go.mod
