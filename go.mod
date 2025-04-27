@@ -1,3 +1,3 @@
-module github.com/thongsoi/architecture
+module github.com/thongsoi/architectures
 
 go 1.24.2
