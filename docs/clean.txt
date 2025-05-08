@@ -1,0 +1,14 @@
+clean-architecture-example/
+│
+├── main.go
+├── adapter/
+│   └── http/
+│       └── user_handler.go
+├── usecase/
+│   └── register_user.go
+├── entity/
+│   └── user.go
+├── repository/
+│   └── inmem_user_repo.go
+└── config/
+    └── app_config.go
