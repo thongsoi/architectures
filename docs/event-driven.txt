@@ -1,9 +1,10 @@
-event-driven-task-tracker/
+event-driven-architecture/
 │
 ├── main.go
-├── static/
-│   └── w3.css
-├── templates/
-│   └── index.html
-│   └── task.html
-├── .env
+├── events/
+│   └── event.go
+├── handlers/
+│   ├── email.go
+│   └── analytics.go
+└── services/
+    └── user.go
