@@ -1,0 +1,45 @@
+freelance-job-platform/
+│
+├── cmd/                    # Entry point(s)
+│   └── main.go             # Starts HTTP server, DI setup
+│
+├── internal/
+│   ├── user/               # User module
+│   │   ├── handler.go
+│   │   ├── service.go
+│   │   ├── repository.go
+│   │   └── model.go
+│   │
+│   ├── job/                # Job posting module
+│   │   ├── handler.go
+│   │   ├── service.go
+│   │   ├── repository.go
+│   │   └── model.go
+│   │
+│   ├── proposal/           # Bidding module
+│   │   ├── handler.go
+│   │   ├── service.go
+│   │   ├── repository.go
+│   │   └── model.go
+│   │
+│   ├── payment/            # Payment and escrow module
+│   │   ├── handler.go
+│   │   ├── service.go
+│   │   ├── repository.go
+│   │   └── model.go
+│   │
+│   ├── chat/               # Messaging module
+│   │   ├── handler.go
+│   │   ├── service.go
+│   │   ├── repository.go
+│   │   └── model.go
+│
+├── pkg/                    # Shared utilities
+│   ├── auth/               # JWT, middleware
+│   ├── db/                 # DB connection pool
+│   ├── config/             # Env & config loading
+│   └── logger/             # Logging setup
+│
+├── migrations/             # DB schema migrations
+├── go.mod
+└── .env
