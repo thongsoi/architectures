@@ -1,0 +1,47 @@
+freelance-job-platform/microservices architecture
+│
+├── services/
+│   ├── user-service/
+│   │   ├── main.go
+│   │   ├── handlers/
+│   │   ├── service/
+│   │   ├── models/
+│   │   └── database/
+│   │       └── user.db.sql (PostgreSQL)
+│
+│   ├── job-service/
+│   │   ├── main.go
+│   │   ├── handlers/
+│   │   ├── service/
+│   │   ├── models/
+│   │   └── database/
+│   │       └── job.db.sql
+│
+│   ├── proposal-service/
+│   │   ├── main.go
+│   │   ├── handlers/
+│   │   ├── service/
+│   │   ├── models/
+│   │   └── database/
+│
+│   ├── payment-service/
+│   │   ├── main.go
+│   │   ├── payment_gateway/
+│   │   └── database/
+│
+│   ├── chat-service/
+│   │   ├── main.go
+│   │   ├── websocket/
+│   │   └── database/
+│
+│   └── review-service/
+│       ├── main.go
+│       └── database/
+│
+├── api-gateway/                  # Aggregates APIs for frontend
+│   ├── main.go
+│   └── routes/
+│
+├── docker-compose.yml            # Spins up all services and DBs
+├── shared-libs/                  # Reusable code (auth, utils)
+└── k8s/                          # Kubernetes manifests (optional)
